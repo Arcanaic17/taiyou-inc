@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Confirm Payment | Taiyou Inc.</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/receipt.css">
+        </head>
+      <body>
+        <script src="js/receiptB.js"></script>
+        <header class="header">
+            <nav class="navbar">
+            <a href="product_b.html" class="logo">Back</a>
+             </nav>
+         </header>
+    <div class="main_body">
+        <div class="prod">
+            <img src="images/Product Images/Light B.jpg" alt="">
+            <div class="item-desc">
+              <h1>SOLAR SPOTLIGHT</h1>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet iste nam dolore optio eos ullam saepe maxime voluptates? Qui delectus aut minus impedit vitae sequi tempore ea sunt ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur, voluptatem similique incidunt sapiente doloremque, mollitia fugit ratione molestias sint aut eveniet id nemo pariatur eum enim et deserunt voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, enim quas! Quo ullam nemo molestias praesentium maxime, sunt doloribus repudiandae adipisci, laborum asperiores, accusamus qui. Illo optio nulla ea ut?</p>
+            </div>
+        </div>
+
+ 
+        <div class="details">
+          <br><br>
+            <form class="quantity">
+              <label for="quantity">Quantity:</label>
+              <input type="number" name="" id="quant_of_prod" min="1" size="15">
+              <br><br><br>
+              <label for="address">Address:</label>
+              <textarea name="address" id="address_of_user" rows="10" cols="143"></textarea><br><br>
+              
+
+              <label for="method">Payment Method:</label>
+              <select name="method" id="method">
+                <option value="transfer">Bank Transfer</option>
+                <option value="check">Cheque</option>
+                <option value="ppal">Paypal</option>
+              </select><br><br>
+          <input type="button" value="Update Details" onclick="update()">
+            </form>
+            <br><br>
+            <h3>Payment Details</h3>
+            <br>
+            <h4>Amount of Product: </h4>
+            <p id="p-amount"></p>
+            <br><br>
+            <h4>Address : </h4>
+            <p id="p-address"></p>
+            <br><br><br>
+        </div>
+
+        <div class="total">
+          <h3>Total : </h3>
+          <h3>RM </h3>
+          <h3 id="total_amount">0</h3>
+        </div>
+          <div class="button-total">
+            <button onclick="Alert()">Pay</button>
+          </div>
+
+    </div>
+
+
+      </body>
+
+</html>

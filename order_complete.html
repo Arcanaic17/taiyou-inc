@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Received!</title>
+<script>
+var time=5;
+function displayTime(){
+    time-=1;
+    document.getElementById("timeLeft").innerText = "This page will be redirected in "+time+" seconds..."
+}
+setInterval(displayTime, 1000)
+
+function redirectPage(){
+let next_page = 'shops.html';
+window.location.replace(next_page)   ; 
+}
+setTimeout('redirectPage()', 5000)
+</script>
+
+<link rel="stylesheet" href="css/or_c.css">
+</head>
+<body>
+    <div class="complete">
+        <h1>Thank you for purchasing!</h1>
+        <h3 id="timeLeft"></h3>
+    </div>
+
+</body>
+</html>
