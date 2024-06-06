@@ -55,11 +55,10 @@ body {
 
 /*Home*/
 .home {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
-    
 }
 
 .home-content{
@@ -86,7 +85,19 @@ body {
     margin: 20px 0 40px;
     line-height: 1.2;
 	text-align: right;
-	
+}
+
+.home-content a{
+    color: #ededed;
+}
+
+.video{
+    padding-bottom: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    transition: .5s;
 }
 
 .home-content .btn-box{
@@ -137,7 +148,7 @@ body {
     bottom: 0%;
     left: 0%;
     width: 100%;
-    padding: 20px 10%;
+    padding: 30px 10%;
     background-color: #081b29;  
     text-align: center;
 
